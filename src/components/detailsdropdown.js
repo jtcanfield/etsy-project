@@ -25,7 +25,7 @@ export default class DetailsDropdown extends Component {
       return false;
     }
   }
-  componentDidUpdate(){
+  componentDidMount(){
     let detailsdropdown = document.getElementsByClassName('detailsdropdown')[0];
     if (detailsdropdown !== undefined && this.state.initdropdown === false){
       const lineheight = document.defaultView.getComputedStyle(detailsdropdown, null);
